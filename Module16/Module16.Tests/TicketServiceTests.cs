@@ -23,5 +23,12 @@ namespace Module16.Tests
             var ticketServiceTest = new TicketService();
             Xunit.Assert.Throws<TicketNotFoundException>(() => ticketServiceTest.GetTicketPrice(100));
         }
+         
+        [Fact]
+        public void GetTicketMustReturnNotNullableTicket()
+        {
+            var ticketServiceTest = new TicketService();
+            Xunit.Assert.NotNull(ticketServiceTest.GetTicket(1));
+        }
     }
 }
