@@ -23,7 +23,7 @@ namespace Module16.Tests
             var allTickets = ticketServiceTest.GetAllTickets();
             NUnit.Framework.Legacy.CollectionAssert.Contains(allTickets, newTicket);
 
-            //ticketServiceTest.DeleteTicket(newTicket);
+            ticketServiceTest.DeleteTicket(newTicket);
             //var obj = new PrivateObject();
 
             var allTicketAfterDelete = ticketServiceTest.GetAllTickets();

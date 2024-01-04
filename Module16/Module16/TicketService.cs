@@ -27,7 +27,7 @@ namespace Module16
             FakeBaseData.Add(ticket);
         }
 
-        private void DeleteTicket(Ticket ticket)
+        public void DeleteTicket(Ticket ticket)
         {
             FakeBaseData.Remove(ticket);
         }
